@@ -34,11 +34,11 @@ public class ConsignaEj2 {
 
     System.out.println("Cantidad de billetes a entregar:");
 
-    for (int billete : billetes) {
-        if (vuelto >= billete) {
-            int cantidad = (int) (vuelto / billete);
-            System.out.println("$" + billete + ": " + cantidad + " billete(s)");
-            vuelto %= billete;
+    for (int b:billetes) {
+        if (vuelto >= b) {
+            int cantidad = (int) (vuelto / b);
+            System.out.println("$" + b + ": " + cantidad + " billete(s)");
+            vuelto %= b;
         }
     }
 }

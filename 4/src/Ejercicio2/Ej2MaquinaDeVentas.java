@@ -166,16 +166,39 @@ public class Ej2MaquinaDeVentas extends javax.swing.JFrame {
         int precioDelProducto = Integer.parseInt(precioProductoString);
         int dineroEntregado = Integer.parseInt(dineroEntregadoString);    
         int vuelto = precioDelProducto - dineroEntregado;
-            
-    
-    }
-    
-    public int billete100() {
-        int billete100;
         
+        int billete100 = billete100(vuelto);
+        int billete50 = billete50(vuelto);
+        int billete20 = billete20(vuelto);
+        int billete10 = billete10(vuelto);
+        int billete5 = billete5(vuelto);
+        int billete2 = billete2(vuelto);
+        int billete1 = billete1(vuelto);
+        
+        
+    
     }
     
+    public int billete100(int vuelto) {
+        int billete100 = 0;
+        while(vuelto > billete100)
+            for (int i = 0; i > 10; i--) {
+                if(vuelto <= billete100)        
+            }
+        do billete50(vuelto);
+        
+        return billete100;
+    }
     
+    public int billete50(int vuelto) {
+        int billete100 = 0;
+        while(vuelto > billete100)
+            for (int i = 0; i > 10; i--) {
+                if(vuelto <= billete100)
+                    do billete50(vuelto);
+            }
+        return billete100;
+    }
     
     
     
